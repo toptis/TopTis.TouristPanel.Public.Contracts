@@ -6,7 +6,7 @@ namespace TopTis.TouristPanel.Public.Contracts.GisheOffline
 {
 	public class TicketTypeDto
 	{
-		public Guid EventTicketTypeId { get; set; }
+		public Guid? EventTicketTypeId { get; set; }
 		public Guid ProgramTicketTypeId { get; set; }
 		public string Title { get; set; }
 		public string Description { get; set; }

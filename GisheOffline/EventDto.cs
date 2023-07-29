@@ -11,7 +11,7 @@ namespace TopTis.TouristPanel.Public.Contracts.GisheOffline
 		public string Description { get; set; }
 		public string ExtraDescription { get; set; }
 		public string Image { get; set; }
-		public List<TicketTypeDto> Items { get; set; }
+		public List<TicketTypeDto> TicketTypes { get; set; }
 		public List<string> Labels { get; set; }
 	}
 }
