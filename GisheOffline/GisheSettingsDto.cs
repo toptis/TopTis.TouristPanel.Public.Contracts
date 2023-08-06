@@ -18,7 +18,6 @@ namespace TopTis.TouristPanel.Public.Contracts.GisheOffline
 
 			OnlineCeckCapacityOnProgramSelect = false;
 			OnlineCeckCapacityOnTicketIssue = false;
-			EventSyncTimes = 5;
 			CashDeskSyncTimes = 5;
 			SettingPassword = "admin";
 		}
@@ -53,9 +52,9 @@ namespace TopTis.TouristPanel.Public.Contracts.GisheOffline
 
 		public bool IsEventLabelRequired { get; set; } = true;
 		public bool ShowRemainingCapcity { get; set; } = true;
+		public bool CustomerClub { get; set; }
 
 
-		public int EventSyncTimes { get; set; }
 		public int CashDeskSyncTimes { get; set; }
 		public int SyncUpcommingDays { get; set; } = 1;
 	}
