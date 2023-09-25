@@ -17,5 +17,8 @@ namespace TopTis.TouristPanel.Public.Contracts.GisheOffline
 		public int Quantity { get; set; }
 		public string EventLabel { get; set; }
 		public List<Guid> TicketIds { get; set; }
+		public int PerTicketPrice { get; set; }
+		public int PerTicketDiscount { get; set; }
+		public int PerTicketPayedAmount { get; set; }
 	}
 }
