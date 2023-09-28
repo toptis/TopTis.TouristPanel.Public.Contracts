@@ -1,0 +1,1 @@
+dotnet  pack --configuration Release -o \\172.16.20.222\TP-Nuget

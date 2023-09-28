@@ -4,13 +4,11 @@ using System.Text;
 
 namespace TopTis.TouristPanel.Public.Contracts.VoucherManagements
 {
-    public class RevokedVoucherDto
+    public class RevokedVoucherBasketDto
     {
-        public RevokingType RevokingType { get; set; }
-        public Guid Id { get; set; }
+        public Guid BasketId { get; set; }
         public int RevokedCount { get; set; }
         public bool Status { get; set; }
-        public bool StationRevokeStatus { get; set; }
         public DateTime IssueDateTime { get; set; }
         public string CustomerFullName { get; set; }
         public string CustomerMobilePhone { get; set; }
@@ -22,9 +20,10 @@ namespace TopTis.TouristPanel.Public.Contracts.VoucherManagements
     public class StationRevokedDto
     {
         public Guid StationId { get; set; }
-        public Guid StationNickname { get; set; }
-        public bool Revoked { get; set; }
-        public DateTime RevokedDateTime { get; set; }
+        public bool Checkin { get; set; }
+        public DateTime? CheckinDateTime { get; set; }
+        public bool Checkout { get; set; }
+        public DateTime? CheckoutDateTime { get; set; }
     }
 
 

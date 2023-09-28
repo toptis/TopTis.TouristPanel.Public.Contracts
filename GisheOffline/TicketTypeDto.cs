@@ -19,5 +19,7 @@ namespace TopTis.TouristPanel.Public.Contracts.GisheOffline
 		public int OfflineTicketsIssued { get; private set; }
 		public string GroupTitle { get; set; }
 		public int Index { get; set; }
-	}
+        public bool StationBasedRevoking { get; set; }
+
+    }
 }

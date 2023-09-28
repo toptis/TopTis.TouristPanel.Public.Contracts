@@ -4,10 +4,9 @@ using System.Text;
 
 namespace TopTis.TouristPanel.Public.Contracts.VoucherManagements
 {
-    public class RevokingVouchersDto
+    public class RevokingVoucherBasketInput
     {
-      public RevokingType RevokingType { get; set; }
-      public Guid Id { get; set; }
+      public Guid BasketId { get; set; }
       public Guid? StationId { get; set; }
     }
 }
